@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/charter
+# catalog-date 2009-05-23 20:19:02 +0200
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-charter
 Version:	20090523
 Release:	1
@@ -93,6 +99,7 @@ use with LaTeX is available in freenfss, part of psnfss.
 %{_texmfdistdir}/fonts/vf/bitstrea/charter/bchro8c.vf
 %{_texmfdistdir}/fonts/vf/bitstrea/charter/bchro8t.vf
 %doc %{_texmfdistdir}/doc/fonts/charter/readme.charter
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -103,3 +110,5 @@ use with LaTeX is available in freenfss, part of psnfss.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
