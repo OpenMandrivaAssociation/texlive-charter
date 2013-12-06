@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-charter
 Version:	20090523
-Release:	4
+Release:	5
 Summary:	Charter fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/charter
