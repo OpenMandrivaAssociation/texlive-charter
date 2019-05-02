@@ -5,8 +5,8 @@
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-charter
-Version:	20180303
-Release:	3
+Version:	20190228
+Release:	1
 Summary:	Charter fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/charter
