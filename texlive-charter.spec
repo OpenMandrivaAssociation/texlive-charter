@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /fonts/charter
-# catalog-date 2009-05-23 20:19:02 +0200
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-charter
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Charter fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/charter
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/charter.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/charter.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/charter.r15878.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/charter.doc.r15878.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ A commercial text font donated for the common good. Support for
 use with LaTeX is available in freenfss, part of psnfss.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -94,25 +88,10 @@ use with LaTeX is available in freenfss, part of psnfss.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20090523-2
-+ Revision: 750103
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20090523-1
-+ Revision: 718035
-- texlive-charter
-- texlive-charter
-- texlive-charter
-- texlive-charter
-- texlive-charter
-
