@@ -1,6 +1,6 @@
 Name:		texlive-charter
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Charter fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/charter
