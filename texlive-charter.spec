@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Charter fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/charter
+URL:		https://www.ctan.org/tex-archive/fonts/charter
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/charter.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/charter.doc.r%{version}.tar.xz
